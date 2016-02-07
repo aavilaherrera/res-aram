@@ -1,0 +1,58 @@
+\documentclass{res-aram}
+\usepackage{blindtext}
+\usepackage[colorlinks=true]{hyperref}  % for links
+\usepackage{lua-visual-debug}
+
+
+\address{%
+    My Workplace\\
+    123 FourFiveSix Street\\
+    My City, ST, 123456
+}
+
+\email{a.shortname@server.fake}
+
+\name[a. shortname]{quite a-long-name}
+
+% Override default placements in the header
+\ContactHeight{4ex}
+\PlaceLeftContactInfo{%
+    % here goes the left
+    %
+    \theaddress
+}
+\PlaceRightContactInfo{%
+    % here goes the right
+    %
+    %\thephone
+    \theemail\\
+    \href{https://www.youtube.com/watch?v=3KANI2dpXLw}{Hilarious Muppets Bloopers!}
+}
+
+\begin{document}
+\section*{Education}
+\experience{Job1}{City}{year--year}
+\jobtitle{Jobtitle}{}
+\jobdescription{\blindtext}
+\jobtitle{Jobtitle}{w. dates}
+\begin{CVdescription}
+        \award[*]{Best Thing \emph{(Potato)}}{year}
+\end{CVdescription}
+
+
+\section*{More}
+\experience{Job2}{City2}{year--year}
+\jobdescription{%
+    \begin{CVdescription}
+    \item[x] item one
+        \begin{CVitemize}
+            \item item a
+            \item item b
+        \end{CVitemize}
+    \item[y] item two
+    \item[z] item three
+    \end{CVdescription}
+}
+
+\end{document}
+

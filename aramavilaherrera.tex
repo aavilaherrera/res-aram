@@ -1,0 +1,314 @@
+\PassOptionsToPackage{bottom=0.5in}{geometry}
+\documentclass{res-aram}
+%\usepackage{lua-visual-debug}
+\usepackage{relsize}                    % for typsetting C++ \Cpp
+\usepackage[colorlinks=true]{hyperref}  % for links
+\usepackage{fontawesome}
+
+%% Helper macros ---------------------------------
+% C++
+\newcommand\Cpp{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
+
+% Publication title with link
+\newcommand{\articletitle}[2]{%
+    \href{#1}{\textit{#2}}%
+}
+
+% github
+\newcommand{\gh}{%
+    \href{https://github.com/aavilaherrera}{\faicon{github}: aavilaherrera}%
+}
+
+% linkedin
+\newcommand{\li}{%
+    \href{http://www.linkedin.com/in/aramavilaherrera}{\faicon{linkedin}: aramavilaherrera}%
+}
+%% -----------------------------------------------
+
+
+%% Set Contact info ------------------------------
+\name[A. Avila-Herrera]{Aram Avila-Herrera, PhD}
+\address{%
+    The J. David Gladstone Institutes\\
+    1650 Owens Street\\
+    San Francisco, California 94158-2261
+}
+\email{aram.avilaherrera@gladstone.ucsf.edu}
+\social{\li\\
+       \gh%
+}
+%\phone{(555)-555-555}
+%% -----------------------------------------------
+
+
+% Override default placements in the header
+\ContactHeight{4ex}
+\PlaceLeftContactInfo{%
+    % here goes the left
+    %
+    \thesocial
+}
+\PlaceRightContactInfo{%
+    % here goes the right
+    %
+    %\thephone
+    \theemail\\
+    \href{https://aavilaherrera.github.io}{aavilaherrera.github.io}
+}
+
+\begin{document}
+
+\section*{Summary}
+\jobdescription[*]{%
+    {\bfseries Computational biologist} investigating evolutionary approaches to
+    understand molecular interactions, especially those
+    between hosts and their pathogens.
+
+    \medskip
+    \begin{CVitemize}
+        \item Benchmarking classification algorithms
+        \item High-performance computing for analyzing large data sets
+        \item Developing bioinformatics pipelines
+    \end{CVitemize}
+}
+
+\section*{Education and Training}
+\experience{J David Gladstone Institutes}{San Francisco, CA}{2015--2016}
+\jobdescription[*]{%
+    \begin{CVdescription}[labelindent=1em]
+        \item[Bioinformatics Fellow] --- Supervisor: Katherine Pollard
+    \end{CVdescription}
+    \begin{CVitemize}
+        \item Identified associations between environmental variables and microbial genes
+              in human and oceanic metagenomic data
+    \end{CVitemize}
+}
+
+\experience[*]{University of California San Francisco}{San Francisco, CA}{2009--2015}
+\jobdescription[*]{%
+    \begin{CVdescription}[labelindent=1em]
+        \item[PhD] in Biological and Medical Informatics ---
+                   Adviser: Katherine Pollard
+    \end{CVdescription}
+    \begin{CVitemize}
+        \item Characterized statistical performance of coevolution methods
+              in predicting structural contacts between proteins
+    \end{CVitemize}
+}
+
+\experience[*]{University of California Santa Cruz}{Santa Cruz, CA}{2005--2009}
+\jobdescription[*]{%
+    \begin{CVdescription}[labelindent=1em]
+        \item[BS] in Bioinformatics
+    \end{CVdescription}
+}
+
+\section*{Computational Biology Skillset}
+\jobdescription[*]{%
+    \begin{CVdescription}
+        \item[Molecular Evolution:]
+            \begin{CVinline}
+                \item phylogeny inference
+                \item coevolution analysis
+                \item non-neutral evolution detection
+                \item ancestral sequence reconstruction
+                \item sequence evolution simulation
+                \item protein family classification
+            \end{CVinline}
+        \item[Structural Biology:]
+            \begin{CVinline}
+                \item homology modeling
+                \item structure alignment
+                \item visualization
+                \item amyloidogenic peptide prediction
+            \end{CVinline}
+        \item[Statistical Programming:]
+            \begin{CVinline}
+                \item machine learning
+                \item hypothesis testing
+                \item regression analysis
+                \item Bayesian inference
+                \item probabilistic graphical modeling
+                \item clustering
+            \end{CVinline}
+    \end{CVdescription}
+    \smallskip
+    \begin{CVdescription}
+        \item[Programming Languages:]
+            \begin{CVinline}
+                \item Python
+                \item R
+                \item bash
+                \item SQL
+                \item Perl
+                \item C
+                \item Java
+                \item \Cpp
+            \end{CVinline}
+        \item[Data Science:]
+            \begin{CVinline}
+                \item pandas
+                \item data.table
+                \item dplyr
+                \item tidyr
+                \item scipy
+                \item numpy
+                \item scikit-learn
+            \end{CVinline}
+    \end{CVdescription}
+}
+
+\section*{Publications}  % redo these later with biber/biblatex
+\jobdescription[*]{
+    \begin{CVdescription}[itemsep=0.5ex]
+        \item \textbf{Avila-Herrera A}. \textit{Statistical evaluation of
+            coevolution methods for predicting inter-protein contacts}
+            (Doctoral dissertation). University of California, San Francisco.
+            2015.
+
+        \item \textbf{Avila-Herrera A}, Pollard K.
+            \articletitle{http://doi.org/10.1186/s12859-015-0677-y}{Coevolutionary
+            analyses require phylogenetically deep alignments and better
+            null models to accurately detect inter-protein contacts within
+            and between species}. BMC Bioinformatics August 2015 16:268
+
+        \item Roan NR, Liu H, Usmani SM, Neidleman J, M\"uller JA,
+            \textbf{Avila-Herrera A}, Gawanbacht A, Zirafi O, Chu S, Dong M,
+            Kumar ST, Smith JF, Pollard KS, F\"andrich M, Kirchhoff F, M\"unch
+            J, Witkowska HE, Greene WC.
+            \articletitle{http://doi.org/10.1128/JVI.00269-14}{Liquefaction of
+            semen generates and later degrades a conserved semenogelin
+            peptide that enhances HIV infection}. Journal of Virology July 2014
+            88:13 7221-7234.
+    \end{CVdescription}
+}
+
+\section*{Presentations}
+\jobdescription[*]{
+    \begin{CVdescription}[itemsep=0.5ex]
+        \item \textbf{Avila-Herrera A}, Hernandez R, Krogan N, Pollard K.
+            \textit{Measuring correlated evolution in HIV-human protein
+            complexes}. Poster presented at XVIth Bay Area Microbial
+            Pathogenesis Symposium, 2013 San Francisco, CA
+
+        \item \textbf{Avila-Herrera A}, Pollard K. \textit{Performance of
+            methods used to identify coevolving residues between proteins}.
+            Poster presented at 14th Biomedical Computation at Stanford
+            Symposium, 2014 Stanford, CA
+    \end{CVdescription}
+}
+
+
+\section*{Honors and Awards}
+\begin{CVdescription}[before={\begin{minipage}[t]{\linewidth}},
+                      after={\end{minipage}},itemsep=0.2ex]
+    \award{Gladstone Institute of Cardiovascular Disease Award for Excellence in Leadership}{2015}
+    \award{UCSF Graduate Research Mentorship Fellowship}{2011--2012}
+    \award{National Science Foundation Graduate Research Fellowship Program \emph{(Honorable Mention)}}{2011}
+    \award{Maximizing Access to Research Careers (MARC) Fellow}{2008--2009}
+    \award{International Scholar Laureate Program \emph{(Delegation on Engineering, China)}}{2007}
+\end{CVdescription}
+
+\section*{Teaching and Mentorship}
+\experience{School of Pharmacy}{University of California San Francisco}{Fall 2010}
+\jobtitle{Teaching Assistant}{}
+\jobdescription{%
+    Developed course material, led weekly lecture discussions, held office
+    hours, and administrated course website for: Biostatistics (BPS 112).
+}
+
+\experience[*]{Integrated Program in Quantitative Biology}{UCSF}{(Falls) 2010--2012}
+\jobtitle{Bootcamp Bioinformatics Leader}{}
+\jobdescription{%
+    Responsible for the organization and design of three-day theoretical and
+    applied bioinformatics crash course. Prepared simulated data sets for
+    coursework and led journal club discussions.
+}
+
+\jobtitle[*]{Bootcamp Instructor}{}
+\jobdescription{%
+    Gave introductory lectures on probability and statistics to incoming
+    students from diverse fields.
+}
+
+\experience[*]{Science Education and Outreach}{Gladstone Institutes}{Dec.~2014}
+\jobtitle{Guest lecturer}{}
+\jobdescription{%
+    Co-led lesson and hands-on activity on HIV/AIDS biology,
+    prevention, and history to students of Balboa High School, San Francisco.
+}
+
+\section*{Professional Development}
+\experience{American Heart Association}{San Francisco, CA}{Sept 2014}
+\jobtitle{Heart Walk Team Leader}{}
+\jobdescription{%
+    Built a team to fundraise and participate in the
+    2014 Bay Area Heart Walk.
+}
+
+\experience[*]{CATALYST Awards Student Internship Program}{UCSF}{Fall 2013}
+\jobtitle{Student Intern}{}
+\jobdescription{%
+    Reviewed funding proposals with academic and industry experts in
+    translational research for
+    \emph{%
+        unmet need,
+        commercialization potential,%
+    } and
+    \emph{%
+        development feasibility%
+    }.
+}
+
+\experience[*]{Graduate Student Internships and Career Exploration}{UCSF}{}
+\jobtitle{2012 Cohort}{}
+\jobdescription{%
+    Participated in career exploration and professional development workshops.
+}
+
+\section*{Additional Laboratory Experience}
+\experience{University of California San Francisco}{}{}
+\jobtitle{Rotations}{(2009--2010)}
+\jobdescription[*]{%
+    \begin{CVitemize}
+    \item \textit{P. falciparum} culture, RNA-protein coimmunoprecipitation,
+        and RNA isolation
+    \item Quantification of intraprotein evolutionary constraints in Rev
+    \item CRISPR detection in metagenomic data
+\end{CVitemize}
+}
+
+\jobtitle[*]{Integrated Program in Quantitative Biology Team Challenges}%
+            {(Fall~2009, Spring~2010)}
+\jobdescription[*]{%
+    \begin{CVitemize}[nosep]
+        \item Microarray expression experiment and analysis
+        \item Built rudimentary fluorescence microscope
+    \end{CVitemize}
+}
+
+\experience[*]{University of California Santa Cruz}{}{}
+\jobtitle{Berman Lab}{(2007--2008)}
+\jobdescription{%
+    Tested sera for immunoreactivity and automated digitization
+    of critical biological sequence records.
+}
+
+\jobtitle[*]{MARC Summer Research Institute}{(Summer 2008)}
+\jobdescription{%
+    Diketopiperazine structure determination and arthropod pathogen screening
+}
+
+\section*{Other}
+\jobdescription[*]{%
+\begin{CVdescription}
+    \item[Prog. \& Markup Languages:] JavaScript, CoffeeScript, MATLAB, Ruby;
+        Markdown, \LaTeX, XML, HTML5, CSS, Stylus
+    \item[Visualization:] ggplot2, lattice, matplotlib, D3.js
+    \item[Foreign Languages:] Fluent in Spanish and proficient in French.
+    \item[Athletics:] Participated in Santa Cruz Half Marathon
+        \emph{(2010)}, Marin Century (50km) \emph{(2010)}, and Alcatraz
+        Challenge \emph{(2012)}.
+\end{CVdescription}
+}
+\end{document}
